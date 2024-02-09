@@ -287,8 +287,7 @@ function ProductCard({
                           class="truncate text-base lg:text-lg text-base-content uppercase font-normal"
                           dangerouslySetInnerHTML={{ __html: name ?? "" }}
                         />
-                      )
-                    }
+                      )}
                   </div>
                 )}
               {l?.hide?.productDescription
