@@ -26,7 +26,7 @@ export default function HeroFlats({
           <div id="hero-text">
             {activeReadMore
               ? (
-                <div class="max-w-[1220px] flex gap-[30px] relative mx-8 md:mx-auto">
+                <div class="max-w-[1220px] flex gap-[30px] relative mx-8 md:mx-auto mb-10">
                   <details className="peer absolute bottom-0 translate-y-full group ">
                     <summary className="text-sm text-neutral-1 font-lato py-2 px-6 border border-neutral-1 cursor-pointer list-none">
                       <span className="group-open:hidden">Ler mais</span>
@@ -41,7 +41,7 @@ export default function HeroFlats({
                       />
                     </div>
                   </div>
-                  <div class="h-10 w-[calc(100%-40px)] bg-gradient-to-b from-transparent to-white absolute bottom-0">
+                  <div class="h-10 w-[calc(100%)] bg-gradient-to-b from-transparent to-white absolute bottom-0">
                   </div>
                 </div>
               )
