@@ -104,7 +104,7 @@ function ProductCard({
   });
   const cta = (
     <a
-      href={url?.replace(/\?.*$/, '')}
+      href={url?.replace(/\?.*$/, "")}
       aria-label="view product"
       class="btn btn-block"
     >
@@ -191,7 +191,7 @@ function ProductCard({
 
         {/* Product Images */}
         <a
-          href={url?.replace(/\?.*$/, '')}
+          href={url?.replace(/\?.*$/, "")}
           aria-label="view product"
           class="grid grid-cols-1 grid-rows-1 w-full"
         >
