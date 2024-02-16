@@ -47,9 +47,10 @@ import * as $$$$$$39 from "./sections/Product/ProductShelfTabbed.tsx";
 import * as $$$$$$40 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$41 from "./sections/Product/ShelfWithImage.tsx";
 import * as $$$$$$42 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$43 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$44 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$45 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$43 from "./sections/RichSnippet.tsx";
+import * as $$$$$$44 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$45 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$46 from "./sections/Theme/Theme.tsx";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
@@ -103,9 +104,10 @@ const manifest = {
     "deco-sites/guikochepki/sections/Product/SearchResult.tsx": $$$$$$40,
     "deco-sites/guikochepki/sections/Product/ShelfWithImage.tsx": $$$$$$41,
     "deco-sites/guikochepki/sections/Product/Wishlist.tsx": $$$$$$42,
-    "deco-sites/guikochepki/sections/Social/InstagramPosts.tsx": $$$$$$43,
-    "deco-sites/guikochepki/sections/Social/WhatsApp.tsx": $$$$$$44,
-    "deco-sites/guikochepki/sections/Theme/Theme.tsx": $$$$$$45,
+    "deco-sites/guikochepki/sections/RichSnippet.tsx": $$$$$$43,
+    "deco-sites/guikochepki/sections/Social/InstagramPosts.tsx": $$$$$$44,
+    "deco-sites/guikochepki/sections/Social/WhatsApp.tsx": $$$$$$45,
+    "deco-sites/guikochepki/sections/Theme/Theme.tsx": $$$$$$46,
   },
   "apps": {
     "deco-sites/guikochepki/apps/decohub.ts": $$$$$$$$$$$0,
