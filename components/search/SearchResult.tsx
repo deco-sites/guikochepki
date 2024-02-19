@@ -78,15 +78,17 @@ function Result({
 
   return (
     <>
-      <HeroSeo {...{
-        ...heroSeo,
-        categoryName: categoryName,
-        title: heroTop?.title,
-        activeTitle: heroTop?.activeTitle,
-        placement: heroTop?.placement,
-        activeReadMore: heroTop?.activeReadMore,
-        description: heroTop?.description,
-      }} />
+      <HeroSeo
+        {...{
+          ...heroSeo,
+          categoryName: categoryName,
+          title: heroTop?.title,
+          activeTitle: heroTop?.activeTitle,
+          placement: heroTop?.placement,
+          activeReadMore: heroTop?.activeReadMore,
+          description: heroTop?.description,
+        }}
+      />
       <div class="container px-4 sm:py-10">
         <SearchControls
           sortOptions={sortOptions}
@@ -112,8 +114,8 @@ function Result({
 
         <div class="flex justify-center my-4">
           <div class="join">
-            {pageInfo.previousPage ? 
-              ( 
+            {pageInfo.previousPage
+              ? (
                 <a
                   aria-label="previous page link"
                   rel="prev"
@@ -122,7 +124,8 @@ function Result({
                 >
                   <Icon id="ChevronLeft" size={24} strokeWidth={2} />
                 </a>
-              ) : (
+              )
+              : (
                 <a
                   aria-label="previous page link"
                   rel="prev"
@@ -131,13 +134,12 @@ function Result({
                 >
                   <Icon id="ChevronLeft" size={24} strokeWidth={2} />
                 </a>
-              )
-            }
+              )}
             <span class="btn btn-ghost join-item">
               Page {zeroIndexedOffsetPage + 1}
             </span>
-            {pageInfo.nextPage ?
-              ( 
+            {pageInfo.nextPage
+              ? (
                 <a
                   aria-label="next page link"
                   rel="next"
@@ -146,7 +148,8 @@ function Result({
                 >
                   <Icon id="ChevronRight" size={24} strokeWidth={2} />
                 </a>
-              ) : (
+              )
+              : (
                 <a
                   aria-label="next page link"
                   rel="next"
@@ -155,16 +158,17 @@ function Result({
                 >
                   <Icon id="ChevronRight" size={24} strokeWidth={2} />
                 </a>
-              )
-            }
+              )}
           </div>
         </div>
       </div>
-      <HeroSeo {...{
-        ...heroSeo,
-        activeReadMore: heroBottom?.activeReadMore,
-        description: heroBottom?.description,
-      }} />
+      <HeroSeo
+        {...{
+          ...heroSeo,
+          activeReadMore: heroBottom?.activeReadMore,
+          description: heroBottom?.description,
+        }}
+      />
       <SendEventOnView
         id={id}
         event={{
