@@ -71,7 +71,6 @@ export const loader = (
   return { ...props };
 };
 
-
 function Result({
   page,
   layout,
