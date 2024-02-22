@@ -37,7 +37,7 @@ export default function HeroSeo({
         className={`mx-auto flex flex-col items-${align} gap-2 container px-4 mt-5`}
       >
         {activeTitle && (title || categoryName) && (
-          <h1 className="inline-block text-[20px] leading-100% ml-2 px-4 font-medium tracking--2.4px">
+          <h1 className="inline-block text-[20px] leading-100% px-4 font-medium tracking--2.4px">
             {title || categoryName}
           </h1>
         )}
@@ -55,7 +55,7 @@ export default function HeroSeo({
                   <div className="text-grey-500 h-[128px] peer-open:h-auto overflow-hidden pb-5 description">
                     <div>
                       <div
-                        className="ml-2 mt-2 flex flex-col gap-2"
+                        className="mt-2 flex flex-col gap-2"
                         dangerouslySetInnerHTML={{ __html: description }}
                       />
                     </div>

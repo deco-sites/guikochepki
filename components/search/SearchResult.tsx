@@ -8,8 +8,9 @@ import { useOffer } from "$store/sdk/useOffer.ts";
 import type { ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
-import HeroSeo from "deco-sites/guikochepki/components/search/HeroSeo.tsx";
 import { AppContext } from "../../apps/site.ts";
+import HeroSeo from "./HeroSeo.tsx";
+
 
 export interface Layout {
   /**
@@ -127,51 +128,25 @@ function Result({
 
         <div class="flex justify-center my-4">
           <div class="join">
-            {pageInfo.previousPage
-              ? (
-                <a
-                  aria-label="previous page link"
-                  rel="prev"
-                  href={pageInfo.previousPage}
-                  class="btn btn-ghost join-item"
-                >
-                  <Icon id="ChevronLeft" size={24} strokeWidth={2} />
-                </a>
-              )
-              : (
-                <a
-                  aria-label="previous page link"
-                  rel="prev"
-                  class="btn btn-ghost join-item"
-                  disabled
-                >
-                  <Icon id="ChevronLeft" size={24} strokeWidth={2} />
-                </a>
-              )}
+            <a
+              aria-label="previous page link"
+              rel="prev"
+              href={pageInfo.previousPage ?? "#"}
+              class="btn btn-ghost join-item"
+            >
+              <Icon id="ChevronLeft" size={24} strokeWidth={2} />
+            </a>
             <span class="btn btn-ghost join-item">
               Page {zeroIndexedOffsetPage + 1}
             </span>
-            {pageInfo.nextPage
-              ? (
-                <a
-                  aria-label="next page link"
-                  rel="next"
-                  href={pageInfo.nextPage}
-                  class="btn btn-ghost join-item"
-                >
-                  <Icon id="ChevronRight" size={24} strokeWidth={2} />
-                </a>
-              )
-              : (
-                <a
-                  aria-label="next page link"
-                  rel="next"
-                  class="btn btn-ghost join-item"
-                  disabled
-                >
-                  <Icon id="ChevronRight" size={24} strokeWidth={2} />
-                </a>
-              )}
+            <a
+              aria-label="next page link"
+              rel="next"
+              href={pageInfo.nextPage ?? "#"}
+              class="btn btn-ghost join-item"
+            >
+              <Icon id="ChevronRight" size={24} strokeWidth={2} />
+            </a>
           </div>
         </div>
       </div>
