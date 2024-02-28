@@ -333,7 +333,7 @@ function ProductCard({
         {l?.elementsPositions?.skuSelector === "Bottom" && (
           <>
             <ul
-              class={`flex items-center gap-2 w-full ${
+              class={`flex flex-col items-left gap-2 w-full ${
                 align === "center" ? "justify-center" : "justify-between"
               } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
             >
